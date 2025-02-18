@@ -42,7 +42,7 @@ struct iphdr {
     unsigned int   saddr;
     unsigned int   daddr;
 };
-
+//一下代码基于simpletun.c
 int tun_alloc(char *dev, int flags) {
     struct ifreq ifr;
     int fd, err;
